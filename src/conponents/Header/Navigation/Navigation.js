@@ -1,5 +1,7 @@
 import React from 'react';
 import Link from '../../General/Link'
+import {Route} from 'react-router-dom';
+import Footer from '../../Footer/Footer'
 
 const Navigation = () => {
     return (
@@ -24,6 +26,18 @@ const Navigation = () => {
                 />
             </li>
         </ul>
+        <Route 
+            path='/web_site'
+            component={Footer}
+          />
+          <Route 
+            path='/apps'
+            component={Footer}
+          />
+          <Route 
+            path='/logo'
+            component={Footer}
+          />
       </div>
     );
   }
